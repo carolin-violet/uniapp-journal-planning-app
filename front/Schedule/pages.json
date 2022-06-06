@@ -1,0 +1,126 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" :                                                                                    
+			{
+					// "enablePullDownRefresh": false
+			}     
+    },
+	  {
+			"path" : "pages/personal/personal",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText":"个人中心",
+				"enablePullDownRefresh": true
+			}	
+		},
+		{
+			"path" : "pages/plans/plans",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText":"制定计划",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path" : "pages/collected/collected",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText":"我的收藏",
+				"enablePullDownRefresh": true
+			}          
+    },
+		{
+			"path" : "pages/articleDetail/articleDetail",
+			"style" :                                                                                    
+			{
+				"enablePullDownRefresh": true
+			}	
+		},
+		{
+			"path" : "pages/diary/diary",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText":"每日一记",
+				"enablePullDownRefresh": true
+			}		
+		},
+		{
+			"path" : "pages/diaryDetail/diaryDetail",
+			"style" :                                                                                    
+			{
+				"enablePullDownRefresh": false
+			}	
+		},
+		{
+			"path" : "pages/navigation/navigation",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "导航",
+					"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/setting/setting",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "设置",
+					"enablePullDownRefresh": false
+			}  
+    }
+        ,{
+            "path" : "pages/navUrl/navUrl",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "你好，友人A",
+		"navigationBarBackgroundColor": "rgb(140, 209, 237)",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": false
+	},
+	"tabBar": {
+		"color":"white",
+		"backgroundColor": "rgb(140, 209, 237)",
+		"selectedColor":"rgb(140, 237, 167)",
+		"list": [
+			{
+				"text":"精选文章",  // 写文章
+				"pagePath":"pages/index/index",
+				"iconPath":"static/icons/article.png",
+				"selectedIconPath":"static/icons/article-active.png"
+			},
+			{
+				"text":"计划",  // 写计划
+				"pagePath":"pages/plans/plans",
+				"iconPath":"static/icons/plans.png",
+				"selectedIconPath":"static/icons/plans-active.png"
+			},
+			{
+				"text":"日记",  // 写日记
+				"pagePath":"pages/diary/diary",
+				"iconPath":"static/icons/diary.png",
+				"selectedIconPath":"static/icons/diary-active.png"
+			},
+			{
+				"text":"我的",  // 个人头像加数据分析
+				"pagePath":"pages/personal/personal",
+				"iconPath":"static/icons/personal.png",
+				"selectedIconPath":"static/icons/personal-active.png"
+			}
+		]
+	}
+}
